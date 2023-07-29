@@ -65,7 +65,7 @@ a.nav:hover{
     width:180px;
     margin-left:30px;
     margin-top:40px;
-    float:center;
+    align:center;
  }
 
 /*additional links*/
