@@ -6,48 +6,6 @@
     margin:0;
   background-color: black;
 } 
-
-/*flexbox to display header*/
-.flexb{
-    display: flex;
-    flex-wrap: wrap;
-    width:100%;
-    justify-content: center;
-    align-items: center;
-}
-
-.flexbitem{
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    flex:100%;
-}
-
- /*flexbox to show my artworks in two columns
- Create two equal columns that stays next to each other */
-
- .container{
-    display: flex; /* to make a structure of grids*/
-    flex-wrap:wrap;
-    width:100%; /* This is very important , helps in aliging contents, setting margin and everything! set's the width of the container*/
-    justify-content: center;
-    align-items: center;
-    padding: 0 50px;
-}
-
-
-.items{
-    display:flex;
-    flex-direction: column;
-    flex:100%;
-    margin-top:14px;  /* top right bottom left*/
-
-}
-
-.items img{
-    padding-top:9px;
-    width:100%;
-}
 /*grid ends*/
 
 div.links{
@@ -97,47 +55,6 @@ a.nav:visited{
 a.nav:hover{
     color:#eef1f3;
     text-decoration: none;
-}
-
-.dropbtn{
-    color:#bfc0c0;
-    border:none;
-}
-
-.dropd{
-    color:#bfc0c0;
-    position: relative;
-    display: inline-block;
-}
-
-.dcontent{
-    color:#bfc0c0;
-    display: none;
-  position: absolute;
-  min-width:251px;
-
-}
-
-.dcontent a{
-  width: 150px;
-  color:#bfc0c0;
-  padding:3px 11px;
-  text-decoration: none;
-  display: block;
-}
-
-
-.dropbtn:hover {
-    color:#eef1f3;
-}
-
-.dropd:hover .dcontent{
-    display:block;
-
-}
-
-.dcontent> a:hover{
-    color:#eef1f3;
 }
  /* **TIP** keep a:hover in the end , since visited and link over rides it if placed before them!*/
 /* nav menu ends*/
@@ -258,28 +175,6 @@ li{
     flex-direction: row;
     flex:50%;
 }
-    .container{
-        display: flex;
-        flex:50%;
-        flex-wrap: wrap;
-        padding: 0 66px;
-
-    }
-    .items{
-        display:flex;
-        flex-direction: column;
-        flex:50%;
-        justify-content: center;
-        align-items: center;
-        margin-top:14px;
-        padding: 0 4px;
-    
-    }
-    
-    .items img{
-        width:100%;
-    }
-
     .des{
         display:flex;
         flex-direction: column;
@@ -351,35 +246,7 @@ li{
         padding-left:29px;
         margin-right: auto;
 
-    }
-
-    .dropd{
-        margin-left:auto;
-    }
-
-        .container{
-            display: flex;
-            flex:25%;
-            flex-wrap: wrap;
-            padding: 0 66px;
-
-        }
-        .items{
-            display:flex;
-            flex-direction: column;
-            flex:25%;
-            justify-content: center;
-            align-items: center;
-            margin-top:100px;
-            padding: 0 4px;
-        
-        }
-        
-        .items img{
-            width:100%;
-        }
-    
-    
+    } 
         .des{
             padding-top: 10px;
             padding-bottom: 10px;
