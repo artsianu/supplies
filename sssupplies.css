@@ -65,7 +65,7 @@ a.nav:hover{
     width:180px;
     margin-left:30px;
     margin-top:40px;
-    float:left;
+    float:center;
  }
 
 /*additional links*/
@@ -159,22 +159,6 @@ li{
         margin:0;
         padding:0;
     }
-
-    /*flexbox to display header*/
-.flexb{
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    flex:50%;
-    width:100%;
-}
-
-.flexbitem{
-    display:flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    flex:50%;
-}
     .des{
         display:flex;
         flex-direction: column;
@@ -226,22 +210,6 @@ li{
             margin:0;
             padding:0;
         }
-
-    /*flexbox to display header*/
-    .flexb{
-        display: flex;
-        flex-wrap:wrap;
-   }
-    
-    .flexbitem{
-        padding-right: 29px;
-        display:flex;
-        align-items: center;
-        flex-direction: row;
-        flex:50%;
-        
-    }
-
     .logo{
         padding-left:29px;
         margin-right: auto;
