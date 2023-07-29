@@ -1,0 +1,425 @@
+
+/* to make page a flexible box */
+*{
+    box-sizing: border-box;
+    padding:0;
+    margin:0;
+  background-color: black;
+} 
+
+/*flexbox to display header*/
+.flexb{
+    display: flex;
+    flex-wrap: wrap;
+    width:100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.flexbitem{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex:100%;
+}
+
+ /*flexbox to show my artworks in two columns
+ Create two equal columns that stays next to each other */
+
+ .container{
+    display: flex; /* to make a structure of grids*/
+    flex-wrap:wrap;
+    width:100%; /* This is very important , helps in aliging contents, setting margin and everything! set's the width of the container*/
+    justify-content: center;
+    align-items: center;
+    padding: 0 50px;
+}
+
+
+.items{
+    display:flex;
+    flex-direction: column;
+    flex:100%;
+    margin-top:14px;  /* top right bottom left*/
+
+}
+
+.items img{
+    padding-top:9px;
+    width:100%;
+}
+/*grid ends*/
+
+div.links{
+    margin-top:9px;
+    color:#bfc0c0;
+    text-decoration: none;
+    list-style-type: none;
+    background-color: none;
+    background: none;
+    text-align: center;
+    padding:2px;
+}
+.links ul{
+
+    margin-top: 9px;
+    color:black;
+    list-style-type: none;
+    background-color: white;
+    text-align: center;
+    padding:4px;
+}
+
+.links li{
+
+    margin-top: 9px;
+    color:#bfc0c0;
+    text-decoration: none;
+    list-style-type: none;
+    background-color: none;
+    background: none;
+    text-align: center;
+    padding:4px;
+}
+
+a.nav:link{
+    color:#bfc0c0;
+    text-decoration: none;
+}
+a.nav:active{
+    color:#eef1f3;
+    text-decoration: none;
+}
+a.nav:visited{
+    color: #bfc0c0;
+    text-decoration: none;
+}
+a.nav:hover{
+    color:#eef1f3;
+    text-decoration: none;
+}
+
+.dropbtn{
+    color:#bfc0c0;
+    border:none;
+}
+
+.dropd{
+    color:#bfc0c0;
+    position: relative;
+    display: inline-block;
+}
+
+.dcontent{
+    color:#bfc0c0;
+    display: none;
+  position: absolute;
+  min-width:251px;
+
+}
+
+.dcontent a{
+  width: 150px;
+  color:#bfc0c0;
+  padding:3px 11px;
+  text-decoration: none;
+  display: block;
+}
+
+
+.dropbtn:hover {
+    color:#eef1f3;
+}
+
+.dropd:hover .dcontent{
+    display:block;
+
+}
+
+.dcontent> a:hover{
+    color:#eef1f3;
+}
+ /* **TIP** keep a:hover in the end , since visited and link over rides it if placed before them!*/
+/* nav menu ends*/
+
+/*for logo */
+ .icon {
+    height:90px;
+    width:180px;
+    margin-left:30px;
+    margin-top:40px;
+    float:left;
+ }
+
+/*additional links*/
+ .links div {
+    color:#bfc0c0;
+    text-decoration: none;
+    margin-top:20px;
+    margin-left:auto;
+    margin-right: auto;
+}
+
+a.links{
+    margin-left:auto;
+    margin-right: auto;
+    }
+
+a.links:link{
+    color:#bfc0c0;
+    text-decoration: none;
+   
+}
+
+a.links:active{
+    color:#eef1f3;
+    text-decoration: none;
+
+}
+a.links:visited{
+    color:#bfc0c0;
+    text-decoration: none;
+
+}
+a.links:hover{
+    color:#eef1f3;
+    text-decoration: none;
+
+}
+
+.des{
+    display:flex;
+    flex-direction: column;
+padding-top: 10px;
+padding-bottom: 10px;
+text-align: center;
+color:#0d1321;
+background-color:  #eef1f3;
+padding-right:5px;
+}
+
+.footer a{
+    color:black;
+    text-decoration: none;
+
+}
+.footer,.fchild,ul,li{
+    background-color: #eef1f3;
+}
+.footer{
+    flex-direction: column;
+    padding-top:29px;
+    display:flex;
+    flex:100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.fchild {
+    padding-top: 21px;
+    list-style-type: none;
+}
+
+ul{
+    font-size: 15px;
+    text-align: center;
+    color:#0d1321;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+li{
+    font-size: 15px;
+}
+
+
+/*///////////////////////////////////////////////////////////////////////////////////*/
+/*Stylesheet changes for tablet screens*/
+
+@media screen and (min-width:600px){
+
+    *{
+        margin:0;
+        padding:0;
+    }
+
+    /*flexbox to display header*/
+.flexb{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    flex:50%;
+    width:100%;
+}
+
+.flexbitem{
+    display:flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    flex:50%;
+}
+    .container{
+        display: flex;
+        flex:50%;
+        flex-wrap: wrap;
+        padding: 0 66px;
+
+    }
+    .items{
+        display:flex;
+        flex-direction: column;
+        flex:50%;
+        justify-content: center;
+        align-items: center;
+        margin-top:14px;
+        padding: 0 4px;
+    
+    }
+    
+    .items img{
+        width:100%;
+    }
+
+    .des{
+        display:flex;
+        flex-direction: column;
+    padding-top: 10px;
+    text-align: center;
+    color:#0d1321;
+    background-color:  #eef1f3;
+    padding-right:5px;
+    }
+    
+    
+    .footer,.fchild,ul,li{
+        background-color: #eef1f3;
+    }
+    .footer{
+        flex-direction: column;
+        padding-top:29px;
+        display:flex;
+        flex:100%;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .fchild {
+        padding-top: 21px;
+        list-style-type: none;
+    }
+    
+    ul{
+        font-size: 15px;
+        text-align: center;
+        color:#0d1321;
+        font-weight: bold;
+    }
+    
+    li{
+        font-size: 15px;
+    }
+    
+
+    }
+/*///////////////////////////////////////////////////////////////////////////////////*/
+/*Stylesheet changes for laptop screens*/
+    
+    @media screen and (min-width:961px){
+    
+
+        *{
+            margin:0;
+            padding:0;
+        }
+
+    /*flexbox to display header*/
+    .flexb{
+        display: flex;
+        flex-wrap:wrap;
+   }
+    
+    .flexbitem{
+        padding-right: 29px;
+        display:flex;
+        align-items: center;
+        flex-direction: row;
+        flex:50%;
+        
+    }
+
+    .logo{
+        padding-left:29px;
+        margin-right: auto;
+
+    }
+
+    .dropd{
+        margin-left:auto;
+    }
+
+        .container{
+            display: flex;
+            flex:25%;
+            flex-wrap: wrap;
+            padding: 0 66px;
+
+        }
+        .items{
+            display:flex;
+            flex-direction: column;
+            flex:25%;
+            justify-content: center;
+            align-items: center;
+            margin-top:100px;
+            padding: 0 4px;
+        
+        }
+        
+        .items img{
+            width:100%;
+        }
+    
+    
+        .des{
+            padding-top: 10px;
+            padding-bottom: 10px;
+            text-align: right;
+            color:#0d1321;
+            background-color:  #eef1f3;
+            padding-right:5px;
+            }
+            
+            
+            .footer,.fchild,ul,li{
+                background-color: #eef1f3;
+            }
+            .footer{
+                flex-direction: row;
+                padding-top:29px;
+                display:flex;
+                flex:33.3%;
+
+            }
+            
+            .fchild {
+                align-items: center;
+                display:flex;
+                flex-direction:column;
+                flex:33.3%;
+                padding:0 110;
+                list-style-type: none;
+            }
+            
+            ul{
+                font-size: 15px;
+                text-align: left;
+                color:#0d1321;
+                font-weight: bold;
+            }
+            
+            li{
+                font-size: 15px;
+            }
+            
+    
+        }
