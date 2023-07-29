@@ -61,6 +61,7 @@ a.nav:hover{
 
 /*for logo */
  .icon {
+     display:block;
     height:90px;
     width:180px;
     margin-left:auto;
